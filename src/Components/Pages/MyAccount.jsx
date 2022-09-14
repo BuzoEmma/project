@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../Assets/logo1.png";
-import ellipse from "../Assets/ellipse.svg";
+import vector from '../Assets/vector.png'
 import { HiMenuAlt1 } from "react-icons/hi";
 import pen from '../Assets/pen.png'
 
@@ -25,11 +25,30 @@ const MyAccount = () => {
                 alt="logo"
                 className="w-[10rem] px-2 h-12 object-contain "
               />
-              <div>
-                <ul>
-                  <Link to={"/"}>Over View</Link> <br />
-                  <Link to={"/MyAccount"}>My Account</Link> <br />
-                  <Link to={"/MyDesign"}>My Design</Link> <br />
+             <div className="w-[20%] space-y-10 text-center absolute left-0  mt-[5rem]">
+                <ul className="w-full ">
+                  <li className="p-5 w-full text-xl ">
+                    <Link to={"/"} className="text-white py-3 px-w-[30px]">
+                      Over View
+                    </Link>
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyAccount"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Account
+                    </Link>{" "}
+                    <br />
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyDesign"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Design
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -53,12 +72,32 @@ const MyAccount = () => {
                     : "hidden"
                 }
               >
-                <ul>
-                  <li>what </li>
-                  <li>what </li>
-                  <li>what </li>
-                  <li>what </li>
+               <div className="w-[20%] space-y-10 text-center absolute left-0  mt-[5rem]">
+                <ul className="w-full ">
+                  <li className="p-5 w-full text-xl ">
+                    <Link to={"/"} className="text-white py-3 px-w-[30px]">
+                      Over View
+                    </Link>
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyAccount"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Account
+                    </Link>{" "}
+                    <br />
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyDesign"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Design
+                    </Link>
+                  </li>
                 </ul>
+              </div>
               </div>
             </div>
           </div>
@@ -84,7 +123,7 @@ const MyAccount = () => {
               <div className="w-[700px] bg-tee-800 pt-10 ">
                 <div className="flex justify-around pb-16 ">
                   <div className="flex ">
-                    <img src={ellipse} alt="" className="w-[135px]" />
+                    <img src={vector} alt="" className="w-[135px]" />
                     <div className="flex flex-col  justify-center">
                     <p className="text-[20px] pl-5 font-medium">Blessing Asukwo</p> 
                     <p className="text-[16px] pl-5">UI/UX Designer</p>
@@ -132,7 +171,7 @@ const MyAccount = () => {
 
           <div className=" absolute right-[5rem] top-8 xs:right-5 xs:top-[2rem] xd:absolute xd:left-[16.8rem] w-[5rem] flex justify-center ">
             <img
-              src={ellipse}
+              src={vector}
               alt="image"
               className="w-12  h-12 xs:w-10 rounded-full"
             />

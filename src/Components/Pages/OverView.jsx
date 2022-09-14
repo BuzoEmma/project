@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../Assets/logo1.png";
-import ellipse from "../Assets/ellipse.svg";
+import vector from "../Assets/vector.png";
 import { HiMenuAlt1 } from "react-icons/hi";
 import one from "../Assets/one.png";
 import two from "../Assets/two.png";
@@ -14,8 +14,7 @@ import add2 from "../Assets/add2.png";
 import add3 from "../Assets/add3.png";
 import add4 from "../Assets/add4.png";
 import add5 from "../Assets/add5.png";
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 const OverView = () => {
   const [show, setShow] = useState(false);
@@ -36,13 +35,30 @@ const OverView = () => {
                 alt="logo"
                 className="w-[10rem] px-2 h-12 object-contain "
               />
-              <div>
-                <ul className=" space-x-10 pt-10">
-                 {/* <a href="#home" onClick={()=>{setActiveNav("#home")}} className={activeNav === '#home' ? "active" : ""}><RiHomeHeartLine /></a> */}
-
-                  <Link to={"/"} onClick={()=>{setActiveNav('/')}} className={activeNav === "/" ? 'bg-white text-tee-200 w-[300px] py-8' : ''}>Over View</Link> <br />
-                  <Link to={"/MyAccount"}>My Account</Link> <br />
-                  <Link to={"/MyDesign"}>My Design</Link>
+              <div className="w-[20%] space-y-10 text-center absolute left-0  mt-[5rem]">
+                <ul className="w-full ">
+                  <li className="p-5 w-full text-xl ">
+                    <Link to={"/"} className="text-white py-3 px-w-[30px]">
+                      Over View
+                    </Link>
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyAccount"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Account
+                    </Link>{" "}
+                    <br />
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyDesign"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Design
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -66,12 +82,32 @@ const OverView = () => {
                     : "hidden"
                 }
               >
-                <ul>
-                  <li>what </li>
-                  <li>what </li>
-                  <li>what </li>
-                  <li>what </li>
+              <div className="w-[20%] space-y-10 text-center absolute left-0  mt-[5rem]">
+                <ul className="w-full ">
+                  <li className="p-5 w-full text-xl ">
+                    <Link to={"/"} className="text-white py-3 px-w-[30px]">
+                      Over View
+                    </Link>
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyAccount"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Account
+                    </Link>{" "}
+                    <br />
+                  </li>
+                  <li className="p-5 w-full text-xl ">
+                    <Link
+                      to={"/MyDesign"}
+                      className="text-white py-3 px-w-[30px]"
+                    >
+                      My Design
+                    </Link>
+                  </li>
                 </ul>
+              </div>
               </div>
             </div>
           </div>
@@ -150,7 +186,7 @@ const OverView = () => {
 
           <div className=" absolute right-[5rem] top-8 xs:right-5 xs:top-[2rem] xd:absolute xd:left-[16.8rem] w-[5rem] flex justify-center ">
             <img
-              src={ellipse}
+              src={vector}
               alt="image"
               className="w-12  h-12 xs:w-10 rounded-full"
             />
@@ -162,4 +198,3 @@ const OverView = () => {
 };
 
 export default OverView;
-
