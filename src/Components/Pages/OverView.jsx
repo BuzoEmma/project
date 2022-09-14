@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../Assets/logo1.png";
-import vector from "../Assets/vector.png";
 import { HiMenuAlt1 } from "react-icons/hi";
 import one from "../Assets/one.png";
 import two from "../Assets/two.png";
@@ -82,32 +81,32 @@ const OverView = () => {
                     : "hidden"
                 }
               >
-              <div className="w-[20%] space-y-10 text-center absolute left-0  mt-[5rem]">
-                <ul className="w-full ">
-                  <li className="p-5 w-full text-xl ">
-                    <Link to={"/"} className="text-white py-3 px-w-[30px]">
-                      Over View
-                    </Link>
-                  </li>
-                  <li className="p-5 w-full text-xl ">
-                    <Link
-                      to={"/MyAccount"}
-                      className="text-white py-3 px-w-[30px]"
-                    >
-                      My Account
-                    </Link>{" "}
-                    <br />
-                  </li>
-                  <li className="p-5 w-full text-xl ">
-                    <Link
-                      to={"/MyDesign"}
-                      className="text-white py-3 px-w-[30px]"
-                    >
-                      My Design
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+                <div className="w-[20%] space-y-10 text-center absolute left-0  mt-[5rem]">
+                  <ul className="w-full ">
+                    <li className="p-5 w-full text-xl ">
+                      <Link to={"/"} className="text-white py-3 px-w-[30px]">
+                        Over View
+                      </Link>
+                    </li>
+                    <li className="p-5 w-full text-xl ">
+                      <Link
+                        to={"/MyAccount"}
+                        className="text-white py-3 px-w-[30px]"
+                      >
+                        My Account
+                      </Link>{" "}
+                      <br />
+                    </li>
+                    <li className="p-5 w-full text-xl ">
+                      <Link
+                        to={"/MyDesign"}
+                        className="text-white py-3 px-w-[30px]"
+                      >
+                        My Design
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -186,7 +185,7 @@ const OverView = () => {
 
           <div className=" absolute right-[5rem] top-8 xs:right-5 xs:top-[2rem] xd:absolute xd:left-[16.8rem] w-[5rem] flex justify-center ">
             <img
-              src={vector}
+              src={logo}
               alt="image"
               className="w-12  h-12 xs:w-10 rounded-full"
             />
